@@ -6,12 +6,16 @@ A neon Pong game in vanilla JS + Canvas. No frameworks, no assets — one `main.
 
 ## Play
 
+**No install needed** — download the repo and double-click `index.html`. The game is plain HTML, CSS and JavaScript with no dependencies, no build step and no imports, so it runs straight from `file://` in any modern browser.
+
+Optionally, for live reload while editing:
+
 ```bash
 npm install
 npm run dev      # http://localhost:8080
 ```
 
-Build a static bundle with `npm run build` (outputs to `dist/`), preview it with `npm run preview`.
+`npm run build` produces a minified bundle in `dist/`; `npm run preview` serves it.
 
 ## Controls
 
