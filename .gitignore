@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+*.log
+.agent-sessions
+.playwright-mcp
+.cursor
+AGENTS.md

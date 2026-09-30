@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>PONG</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070d'/%3E%3Crect x='5' y='9' width='3' height='14' rx='1.5' fill='%234ce0c8'/%3E%3Crect x='24' y='9' width='3' height='14' rx='1.5' fill='%23ff4d7e'/%3E%3Ccircle cx='16' cy='16' r='3' fill='%23fff'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="hud">
+        <div class="score" id="scoreL">0</div>
+        <div class="title">PONG</div>
+        <div class="score" id="scoreR">0</div>
+      </header>
+
+      <div class="stage">
+        <canvas id="game" width="1000" height="620"></canvas>
+
+        <div class="overlay" id="overlay">
+          <h1 id="ovTitle">PONG</h1>
+          <p id="ovText">First to 7 wins</p>
+          <div class="modes" id="modes">
+            <button class="mode" data-mode="easy">Easy</button>
+            <button class="mode is-active" data-mode="normal">Normal</button>
+            <button class="mode" data-mode="hard">Hard</button>
+            <button class="mode" data-mode="2p">2 Players</button>
+          </div>
+          <button class="play" id="playBtn">Play</button>
+          <p class="hint">
+            <b>W</b>/<b>S</b> or <b>↑</b>/<b>↓</b> to move · <b>Space</b> to pause · drag on touch
+          </p>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
